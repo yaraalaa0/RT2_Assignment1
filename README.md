@@ -12,7 +12,7 @@ In the root of your workspace, run:
 catkin_make
 ~~~
 
-Then, run:
+Then, to launch the simulation, run:
 
 ~~~
 roslaunch rt2_assignment1_1 sim.launch
