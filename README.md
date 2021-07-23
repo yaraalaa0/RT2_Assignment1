@@ -12,7 +12,9 @@ The system is composed of the simulation environment and four nodes:
 
 - the UserInterface node, which asks the user to start or stop the robot, and calls the service implemented in the FSM node. *(not modified from the main branch)*
 
-Using this system, the robot can be stopped at anytime, without necessarily reaching the target. 
+The folder action contains the definition of the custom action implemented.
+
+Using the above system, the robot can be stopped at anytime, without necessarily reaching the target. 
 
 ![alt text](https://github.com/yaraalaa0/RT2_Assignment1/blob/action/graph_assign1.PNG?raw=true)
 
