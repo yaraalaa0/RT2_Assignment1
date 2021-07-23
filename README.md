@@ -14,7 +14,7 @@ The system is composed of the simulation environment and four nodes:
 
 Using this system, the robot can be stopped at anytime, without necessarily reaching the target. 
 
-![alt text]https://github.com/yaraalaa0/RT2_Assignment1/blob/action/graph_assign1.PNG?raw=true)
+![alt text](https://github.com/yaraalaa0/RT2_Assignment1/blob/action/graph_assign1.PNG?raw=true)
 
 ## How to run the code:
 
