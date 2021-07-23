@@ -4,13 +4,13 @@ This is the action branch of the assignment. It performs the same behaviour as i
 
 The system is composed of the simulation environment and four nodes:
 
-- the node PositionServer which implements a random position service (not modified from the main branch)
+- the node PositionServer which implements a random position service *(not modified from the main branch)*
 
-- the node goToPointAc which implements an action server to drive a robot toward a goal in the environment, and checks periodically if a cancel request has been sent. If so, it preempts the current goal and stops the robot. (has been modified from goToPoint node of the main branch)
+- the node goToPointAc which implements an action server to drive a robot toward a goal in the environment, and checks periodically if a cancel request has been sent. If so, it preempts the current goal and stops the robot. *(has been modified from goToPoint node of the main branch)*
 
-- the node FSM, which implements a server to start or stop the robot, and calls the PositionServer and goToPointAc to drive the robot. (has been modified from the main branch)
+- the node FSM, which implements a server to start or stop the robot, and calls the PositionServer and goToPointAc to drive the robot. *(has been modified from the main branch)*
 
-- the UserInterface node, which asks the user to start or stop the robot, and calls the service implemented in the FSM node. (not modified from the main branch)
+- the UserInterface node, which asks the user to start or stop the robot, and calls the service implemented in the FSM node. *(not modified from the main branch)*
 
 Using this system, the robot can be stopped at anytime, without necessarily reaching the target. 
 
