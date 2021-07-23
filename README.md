@@ -1,5 +1,13 @@
 # RT2_Assignment1
 
-This is the main package provided for the assignment without any modifications. 
+## How to run the code:
 
-It drives the robot to a random goal position. When a cancel request is sent, the user has to wait until the robot reaches its current goal, then, it stops.
+put this package inside your ROS workspace
+
+In the root of your workspace, run: 
+
+~~~
+
+catkin_make
+
+~~~
