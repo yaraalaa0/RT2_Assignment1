@@ -4,7 +4,7 @@ This is the action branch of the assignment. It performs the same behaviour as i
 
 ## How to run the code:
 
-put this package inside your ROS workspace
+put this package inside your ROS workspace (no additional packages are required)
 
 In the root of your workspace, run: 
 
