@@ -1,4 +1,4 @@
-# RT2_Assignment1
+# RT2_Assignment1_1
 
 This is the action branch of the assignment. It performs the same behaviour as in the main branch, but with the difference of using action for sending the goal requests to the go_to_point server instead of service. This adds the ability to cancel the goal immediately and stop the robot once a cancel request has been received from the user. 
 
@@ -12,7 +12,7 @@ The system is composed of the simulation environment and four nodes:
 
 - the UserInterface node, which asks the user to start or stop the robot, and calls the service implemented in the FSM node. *(not modified from the main branch)*
 
-The folder action contains the definition of the custom action implemented.
+The folder action contains the definition of the custom action implemented (GoToPoint.action). The action request is the x, y, and theta goal position. The action result is a boolean flag to indicate whether the goal has been successfully reached or not. The action feedback at any time is the x, y, and theta current position of the robot. 
 
 Using the above system, the robot can be stopped at anytime, without necessarily reaching the target. 
 
