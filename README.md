@@ -29,7 +29,41 @@ The random position server node was first implemented as a ROS2 class, then, it 
 ----------------------------------------------------------------------------------------------
 ## How to run the system:
 
-- Required Packages:  
+- **Required Packages:**  
+
 ros1_bridge ( https://github.com/ros2/ros1_bridge ). This package should be cloned inside the ROS2 workspace. Change the timeout of the bridge from 5 to 60 seconds. To do this, modify line 314 of the factory.hpp file, with: auto timeout = std::chrono::seconds(60);
 
+- **Building the system:**
 
+The package rt2_assignment1 should be put inside your ROS1 workspace. The packages assignment_interfaces and rt2_assignment1_2 should be put inside your RO2 workspace. The files: ros.sh, ros2.sh, ros12.sh, and bridge.sh should be put outside the workspaces. 
+
+In the first shell, build your ROS1 workspace:
+
+~~~
+source ros.sh
+cd ros_ws
+catkin_make
+~~~
+
+In the second shell, build your ROS2 workspace, run:
+
+~~~
+source ros2.sh
+cd ros2_ws
+colcon build --symlink-install --packages-skip ros1_bridge
+~~~
+
+In the third shell, build the bridge, run:
+
+~~~
+source ros12.sh
+cd ros2_ws
+colcon build --packages-select ros1_bridge --cmake-force-configure
+~~~
+
+- **Launching the system:**
+
+To launch the system, run the following command in the root folder:
+~~~
+./bridge.sh
+~~~
