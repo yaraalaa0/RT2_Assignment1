@@ -7,3 +7,13 @@ When the user sends a start command, it continues to drive the robot to random g
 This is the overall structure of the system:
 
 ![alt text](https://github.com/yaraalaa0/RT2_Assignment1/blob/main/graph_main.PNG?raw=true)
+
+---------------------------------------------------------------------------------------------
+
+To launch the system, run:
+
+~~~
+
+roslaunch rt2_assignment1 sim.launch
+
+~~~
