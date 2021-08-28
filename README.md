@@ -13,7 +13,5 @@ This is the overall structure of the system:
 To launch the system, run:
 
 ~~~
-
 roslaunch rt2_assignment1 sim.launch
-
 ~~~
