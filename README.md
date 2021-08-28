@@ -23,7 +23,7 @@ The StateMachine has a timer callback function (call_main()) that gets executed 
 
 ### 2- Random Position Server Node
 
-The random position server node was first implemented as a ROS2 class, then, it was converted to a component. The RandPosServer class has as a member the position_server server. The callback of this server gets the minimum and maximum limits sent in the request, and generates a random x, y, theta position. The, sends it as a response.
+The random position server node was first implemented as a ROS2 class, then, it was converted to a component. The RandPosServer class has as a member the position_server server. The callback of this server gets the minimum and maximum limits sent in the request, and generates a random x, y, theta position. Then, sends it as a response.
 
 
 ----------------------------------------------------------------------------------------------
